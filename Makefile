@@ -6,3 +6,5 @@ down-clear:
 	docker compose down -v
 db-gui:
 	open http://localhost:8080
+shell-to-server:
+	docker compose exec server sh
