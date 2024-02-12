@@ -7,7 +7,9 @@ dependencies = [
     "python-dotenv==1.0.0",
     "uvicorn[standard]",
     "sqlalchemy==2.0.25",
-    "pydantic==2.5.3"
+    "pydantic==2.5.3",
+    "alembic==1.13.1",
+    "psycopg2==2.9.9"
 ]
 
 [project.optional-dependencies]

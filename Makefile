@@ -7,4 +7,10 @@ down-clear:
 db-gui:
 	open http://localhost:8080
 shell-to-server:
-	docker compose exec server sh
+	docker compose exec server bash
+run-migrations:
+	docker compose exec server bash -c "alembic upgrade head"
+add-migrations:
+	docker compose exec server bash -c "alembic revision --autogenerate -m /"$(name)/""
+format:
+	docker compose exec server bash -c "black ./src"

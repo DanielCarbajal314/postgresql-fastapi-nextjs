@@ -7,6 +7,7 @@ from logging import getLogger
 logger = getLogger(__name__)
 app = FastAPI()
 
+
 @app.get("/healthcheck/")
 def healthcheck():
     return "Health - OK"
